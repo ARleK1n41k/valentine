@@ -1,0 +1,103 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #8a8a8a;
+}
+
+.heart-shape {
+    position: relative;
+    width: 400px;
+    /* Ширина контейнера */
+    height: 400px;
+    /* Высота контейнера */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.valentine-image {
+    width: 100%;
+    /* Ширина изображения валентинки */
+    height: auto;
+    /* Автоматическая высота для сохранения пропорций */
+    position: absolute;
+    /* Позиционирование по абсолютным координатам */
+    top: 0;
+    /* Положение сверху */
+    left: 0;
+    /* Положение слева */
+    z-index: 1;
+    /* Устанавливаем уровень слоя */
+}
+
+video {
+    width: 300px;
+    /* Ширина видео */
+    height: 200px;
+    /* Высота видео */
+    border-radius: 15px;
+    /* Закругляем углы видео */
+    position: relative;
+    /* Позиционирование относительно родителя */
+    z-index: 2;
+    /* Устанавливаем уровень слоя выше изображения валентинки */
+}
+
+#textContainer {
+    position: absolute;
+    z-index: 3;
+    /* Устанавливаем уровень слоя выше видео и изображения валентинки */
+    color: rgb(0, 0, 0);
+    /* Цвет текста */
+    text-align: center;
+    /* Выравниваем текст по центру */
+}
+
+.hidden {
+    display: none;
+    /* Скрываем текст по умолчанию */
+}
+
+.gif-container {
+    position: absolute;
+}
+
+.gif {
+    width: 115px;
+    /* Размер гифок */
+    height: 115px;
+    /* Размер гифок */
+    z-index: 4;
+}
+
+.top-left {
+    position: absolute;
+    top: 100px;
+    /* Позиция гифки в верхнем левом углу */
+    left: 100px;
+}
+
+.top-right {
+    position: absolute;
+    top: 100px;
+    /* Позиция гифки в верхнем правом углу */
+    right: 100px;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 100px;
+    /* Позиция гифки в нижнем левом углу */
+    left: 100px;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 100px;
+    /* Позиция гифки в нижнем правом углу */
+    right: 100px;
+}

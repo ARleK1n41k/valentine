@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Валентинка</title>
+    <link rel="stylesheet" href="valentinka.css">
+</head>
+
+<body>
+    <div class="heart-shape">
+        <!-- Изображение валентинки -->
+        <img src="i.jpg" alt="Валентинка" class="valentine-image">
+
+        <video id="myVideo" autoplay muted playsinline>
+            <source src="vid.mp4" type="video/mp4">
+            Ваш браузер не поддерживает видео.
+        </video>
+
+        <div id="textContainer" class="hidden">
+            <h1>Самой шибанутой, крутой и легендарной подруге мира!</h1>
+            <p>Спасибо, что ты у меня есть!</p>
+        </div>
+
+        <div class="gif-container">
+            <img src="gif.gif" alt="Гифка 1" class="gif top-left">
+            <img src="gif.gif" alt="Гифка 2" class="gif top-right">
+            <img src="gif.gif" alt="Гифка 3" class="gif bottom-left">
+            <img src="gif.gif" alt="Гифка 4" class="gif bottom-right">
+        </div>
+    </div>
+
+    <button onclick="toggleMute()">Переключить звук</button>
+
+    <script>
+        function toggleMute() {
+            var video = document.getElementById("myVideo");
+            video.muted = !video.muted;
+        }
+    </script>
+    <script src="valentinka.js"></script>
+</body>
+
+</html>
